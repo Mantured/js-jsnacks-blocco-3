@@ -74,27 +74,6 @@ BONUS 2
     }
 
 
-for (let i = 0; i < numberUserN; i++) {
-    let tempArray = [];
-    let sum = 0;
-    let garbage = [];
-
-    while (tempArray.length < numberUserM && sum < numberUserL) {
-        let randomNumber = (Math.floor(Math.random() * 4528) + 4);
-        tempArray.push(randomNumber);
-
-        if (tempArray.length === numberUserM) {
-            for (let x = 0; x > numberUserM; x++) {
-                sum += tempArray[x];
-            }
-            if (sum >  numberUserL) garbage = [];
-        }
-        console.log(tempArray);
-    }
-    console.log(sum);
-    console.log(garbage);
-} */
-
 /* # BONUS 3
 
     Fai inserire tre numeri, che chiameremo N & M & L, all'utente.
