@@ -1,11 +1,4 @@
 
-/*BONUS 1
-Fai inserire due numeri, che chiameremo N & M, all'utente.
-Genera N array, ognuno formato da M numeri casuali tra 4 e 4532.
-Ogni volta che ne crei uno, stampalo a schermo.
-*/
-
-
 /* let numberUser = parseInt(prompt('Inserisci un numero'));
 while (isNaN(numberUser)) {
     numberUser = parseInt(prompt('Inserisci un numero'));
@@ -27,24 +20,40 @@ for (i = 0; i < numberUser; i++){
 }
 console.log(arrays); */
 
-let numberUserN = parseInt(prompt('Inserisci un numero'));
+
+/*BONUS 1
+Fai inserire due numeri, che chiameremo N & M, all'utente.
+Genera N array, ognuno formato da M numeri casuali tra 4 e 4532.
+Ogni volta che ne crei uno, stampalo a schermo.
+*/
+
+/* let numberUserN = parseInt(prompt('Inserisci un numero'));
 let numberUserM = parseInt(prompt('Inserisci un numero'));
-while (isNaN(numberUser)) {
-    numberUser = parseInt(prompt('Inserisci un numero'));
+while (isNaN(numberUserN)&& isNaN(numberUserM)) {
+    numberUserN = parseInt(prompt('Inserisci un numero'));
 }
 
-if (numberUser >= 100) {
-    numberUser = 100;
+if (numberUserN && numberUserN >= 100) {
+    numberUserN = 100;
+    numberUserM = 100;
 }
 
 const arrays = [];
 
-for (i = 0; i < numberUser; i++){
+for (i = 0; i < numberUserN; i++){
     const tempArray = [];
-    while (tempArray.length < 10) {
+    while (tempArray.length < numberUserM) {
         tempArray.push(Math.floor(Math.random() * 4528) + 4);
     }
     console.log(tempArray);
     arrays.push(tempArray);
 }
-console.log(arrays);
+console.log(arrays); */
+
+
+/*
+BONUS 2
+    Fai inserire tre numeri, che chiameremo N & M & L, all'utente.
+    Genera N array, ognuno formato da M numeri casuali tra 4 e 4532 che sommati diano almeno L.
+    Ogni volta che ne crei uno, stampalo a schermo.
+ */
